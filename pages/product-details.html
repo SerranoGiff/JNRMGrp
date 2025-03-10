@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JNRM Group - Product Item</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/productview.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="../assets/img/logo.png" class="logo img-fluid me-2" style="max-height: 50px" alt="Logo" />
+                <span class="fw-bold">JNRM GROUP</span>
+            </a>
+
+            <!-- Icons and Toggler (for small screens) -->
+            <div class="d-flex align-items-center">
+                <div class="icon-buttons d-flex d-lg-none align-items-center">
+                    <a href="../testing/index.html" class="me-1"><i class="fas fa-user"></i></a>
+                    <a href="cart.php" class="me-1"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+                <button class="navbar-toggler border-0 p-0 ms-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#group">Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#catalogues">Catalogues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#food">Food Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Icons (for large screens) -->
+            <div class="icon-buttons d-none d-lg-flex align-items-center">
+                <a href="../testing/index.html" class="me-3"><i class="fas fa-user"></i></a>
+                <a href="pages/cart.php" class="me-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products -->
+    <section id="productview" class="py-5 mt-lg-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Product Image -->
+                <div class="col-lg-5 col-md-6 text-center mb-4 mb-md-0">
+                    <div class="prod p-3 bg-white rounded shadow-sm">
+                        <img id="mainImage" src="../assets/img/black.jpg" class="img-fluid rounded product-img"
+                            alt="Product Image">
+                    </div>
+                    <div id="thumbnailContainer" class="d-flex justify-content-center mt-3">
+                        <!-- Thumbnails dynamically update here -->
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-lg-7 col-md-6">
+                    <h3 class="fw-bold text-dark">Green Leaves Liquid Food Color 30ML - 1 Gallon</h3>
+                    <p class="text-muted mb-2 fs-5">$45.00 <span class="text-danger">Sold Out</span></p>
+
+                    <!-- Size Options -->
+                    <div class="mb-3">
+                        <span class="fw-bold">Size:</span>
+                        <div class="d-flex flex-wrap gap-2 mt-2">
+                            <button class="btn btn-outline-dark btn-sm size-btn" data-size="30ML">30ML</button>
+                            <button class="btn btn-outline-dark btn-sm size-btn" data-size="500ML">500ML</button>
+                            <button class="btn btn-outline-dark btn-sm size-btn" data-size="1L">1L</button>
+                            <button class="btn btn-outline-dark btn-sm size-btn" data-size="1 Gallon">1 Gallon</button>
+                        </div>
+                    </div>
+
+                    <!-- Color Options -->
+                    <div class="mb-3">
+                        <span class="fw-bold">Color:</span>
+                        <div class="d-flex flex-wrap gap-2 mt-2">
+                            <button class="btn btn-outline-dark btn-sm color-btn" data-color="black">Black</button>
+                            <button class="btn btn-outline-dark btn-sm color-btn" data-color="red">Red</button>
+                            <button class="btn btn-outline-dark btn-sm color-btn" data-color="blue">Blue</button>
+                            <button class="btn btn-outline-dark btn-sm color-btn" data-color="green">Green</button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Selector -->
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fw-bold me-2">Quantity:</span>
+                        <button class="btn btn-outline-secondary btn-sm qty-btn" data-action="decrease">-</button>
+                        <input type="text" class="form-control text-center mx-2 qty-input" value="1" readonly>
+                        <button class="btn btn-outline-secondary btn-sm qty-btn" data-action="increase">+</button>
+                    </div>
+
+                    <!-- Buttons -->
+                    <button class="btn btn-success w-100"><i class="fa fa-cart-shopping"></i> Add to Cart</button>
+
+                    <!-- Product Highlights -->
+                    <div class="mt-4">
+                        <h5 class="fw-bold text-dark">A Vibrant Burst of Food Colors</h5>
+                        <p class="text-muted">
+                            Enhance your dishes with our food-grade, highly concentrated liquid color. Perfect for
+                            baking, cooking, and industrial food production.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-star text-warning"></i> High Quality</li>
+                            <li><i class="fas fa-tint text-primary"></i> Water Soluble</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Easy to Use</li>
+                            <li><i class="fas fa-wallet text-info"></i> Cost Effective</li>
+                            <li><i class="fas fa-leaf text-success"></i> No Artificial Additives</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Information Section -->
+    <section id="product-info" class="bg-white">
+        <div class="container">
+            <h4 class="fw-bold text-dark">Product Information</h4>
+            <p class="text-muted">
+                Our Green Leaves Liquid Food Color is a premium food-grade dye, perfect for adding vibrant hues
+                to your culinary creations. Ideal for professional and home use, this colorant is highly concentrated
+                and easy to blend. Whether you're baking, cooking, or working on industrial food production,
+                this is your go-to choice for quality and safety.
+            </p>
+            <h5 class="fw-bold text-dark">Specifications:</h5>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-tint text-primary"></i> Type: Liquid Food Color</li>
+                <li><i class="fas fa-flask text-warning"></i> Volume: 30ML - 1 Gallon</li>
+                <li><i class="fas fa-palette text-success"></i> Available Colors: Black, Red, Blue, Green</li>
+                <li><i class="fas fa-check-circle text-success"></i> FDA Approved</li>
+                <li><i class="fas fa-recycle text-info"></i> Eco-Friendly Packaging</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section id="relatedProducts" class="py-5 bg-white">
+        <div class="container">
+            <h4 class="fw-bold">You May Also Like</h4>
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <a href="product-details.html" class="text-decoration-none text-dark">
+                        <div class="card">
+                            <img src="path-to-image1.jpg" class="card-img-top" alt="Red Food Color">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Red Liquid Food Color - 30ML</h5>
+                                <p class="text-muted">$15.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 mb-3">
+                    <a href="product-details.html" class="text-decoration-none text-dark">
+                        <div class="card">
+                            <img src="path-to-image2.jpg" class="card-img-top" alt="Blue Food Color">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Blue Liquid Food Color - 30ML</h5>
+                                <p class="text-muted">$15.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Customer Reviews Section -->
+<section id="customer-reviews" class="py-5 bg-light">
+    <div class="container">
+        <h4 class="fw-bold">Customer Reviews</h4>
+
+        <!-- Reviews List -->
+        <div id="reviews-container">
+            <!-- Sample Reviews -->
+            <div class="review p-3 mb-3 bg-white rounded shadow-sm d-flex align-items-start">
+                <img src="path-to-profile1.jpg" alt="Profile Picture" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-1">Juan Dela Cruz</h5>
+                        <span class="text-warning">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-muted">Napakaganda ng kulay! Sakto sa recipe ko. Highly recommended!</p>
+                </div>
+            </div>
+
+            <div class="review p-3 mb-3 bg-white rounded shadow-sm d-flex align-items-start">
+                <img src="path-to-profile2.jpg" alt="Profile Picture" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-1">Maria Santos</h5>
+                        <span class="text-warning">⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-muted">Okay naman pero medyo mahal. Pero sulit kasi concentrated.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Review Form -->
+        <div class="mt-4 p-4 bg-white rounded shadow-sm">
+            <h5 class="fw-bold">Leave a Review</h5>
+            <form id="review-form">
+                <div class="mb-3">
+                    <label class="fw-bold">Your Rating:</label>
+                    <select class="form-control" id="reviewer-rating">
+                        <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                        <option value="4">⭐⭐⭐⭐ - Good</option>
+                        <option value="3">⭐⭐⭐ - Average</option>
+                        <option value="2">⭐⭐ - Below Average</option>
+                        <option value="1">⭐ - Poor</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-bold">Your Review:</label>
+                    <textarea class="form-control" id="reviewer-comment" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Submit Review</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About JNRM Group</h5>
+                    <p>
+                        Providing the best solutions and quality products to meet your
+                        needs.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../main.html#about" class="footer-link">About Us</a></li>
+                        <li><a href="../main.html#group" class="footer-link">Our Group</a></li>
+                        <li><a href="../main.html#products" class="footer-link">Products</a></li>
+                        <li><a href="../main.html#contact" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 text-center">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/green.leaves.ph" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/jnrm-corporation" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-3">
+                <p class="copyright">&copy; 2025 JNRM Group. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Product Image
+        // Product Image Data
+        const productImages = {
+            black: {
+                main: "../assets/img/black.jpg",
+                thumbs: ["../assets/img/black.jpg", "../assets/img/black2.jpg", "../assets/img/black3.jpg"]
+            },
+            red: {
+                main: "../assets/img/red.jpg",
+                thumbs: ["../assets/img/red1.jpg", "../assets/img/red2.jpg", "../assets/img/red3.jpg"]
+            },
+            blue: {
+                main: "../assets/img/blue.jpg",
+                thumbs: ["../assets/img/blue1.jpg", "../assets/img/blue2.jpg", "../assets/img/blue3.jpg"]
+            },
+            green: {
+                main: "../assets/img/green.jpg",
+                thumbs: ["../assets/img/green1.jpg", "../assets/img/green2.jpg", "../assets/img/green3.jpg"]
+            }
+        };
+
+        // Product Size Data
+        const productSizes = {
+            "30ML": {
+                main: "../assets/img/30ml.jpg",
+                thumbs: ["../assets/img/30ml1.jpg", "../assets/img/30ml2.jpg", "../assets/img/30ml3.jpg"]
+            },
+            "500ML": {
+                main: "../assets/img/500ml.jpg",
+                thumbs: ["../assets/img/500ml1.jpg", "../assets/img/500ml2.jpg", "../assets/img/500ml3.jpg"]
+            },
+            "1L": {
+                main: "../assets/img/1l.jpg",
+                thumbs: ["../assets/img/1l1.jpg", "../assets/img/1l2.jpg", "../assets/img/1l3.jpg"]
+            },
+            "1 Gallon": {
+                main: "../assets/img/1gallon.jpg",
+                thumbs: ["../assets/img/1gallon1.jpg", "../assets/img/1gallon2.jpg", "../assets/img/1gallon3.jpg"]
+            }
+        };
+
+        // Function to change main image
+        function changeImage(imageSrc) {
+            document.getElementById("mainImage").src = imageSrc;
+        }
+
+        // Function to update thumbnails
+        function updateThumbnails(images) {
+            const thumbnailContainer = document.getElementById("thumbnailContainer");
+            thumbnailContainer.innerHTML = "";
+
+            images.forEach((thumb) => {
+                const imgElement = document.createElement("img");
+                imgElement.src = thumb;
+                imgElement.className = "img-thumbnail mx-1 thumb-img";
+                imgElement.alt = "Thumbnail";
+                imgElement.onclick = function () {
+                    changeImage(thumb);
+                };
+                thumbnailContainer.appendChild(imgElement);
+            });
+        }
+
+        // Function to set active class
+        function setActiveClass(buttons, selectedButton) {
+            buttons.forEach(btn => btn.classList.remove("active"));
+            selectedButton.classList.add("active");
+        }
+
+        // Event listener for color buttons
+        document.querySelectorAll(".color-btn").forEach((button) => {
+            button.addEventListener("click", function () {
+                const selectedColor = this.getAttribute("data-color");
+                changeImage(productImages[selectedColor].main);
+                updateThumbnails(productImages[selectedColor].thumbs);
+                setActiveClass(document.querySelectorAll(".color-btn"), this);
+            });
+        });
+
+        // Event listener for size buttons
+        document.querySelectorAll(".size-btn").forEach((button) => {
+            button.addEventListener("click", function () {
+                const selectedSize = this.getAttribute("data-size");
+                changeImage(productSizes[selectedSize].main);
+                updateThumbnails(productSizes[selectedSize].thumbs);
+                setActiveClass(document.querySelectorAll(".size-btn"), this);
+            });
+        });
+
+        // Initialize default images
+        updateThumbnails(productImages["black"].thumbs);
+        document.querySelector('.color-btn[data-color="black"]').classList.add("active");
+        document.querySelector('.size-btn[data-size="30ML"]').classList.add("active");
+
+        // Quantity Selector Functionality
+        document.querySelectorAll(".qty-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                const action = this.getAttribute("data-action");
+                const qtyInput = document.querySelector(".qty-input");
+                let currentValue = parseInt(qtyInput.value, 10);
+
+                if (action === "increase") {
+                    qtyInput.value = currentValue + 1;
+                } else if (action === "decrease" && currentValue > 1) {
+                    qtyInput.value = currentValue - 1;
+                }
+            });
+        });
+
+        // Comments 
+        document.getElementById("review-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get values from the form
+            const name = document.getElementById("reviewer-name").value;
+            const rating = document.getElementById("reviewer-rating").value;
+            const comment = document.getElementById("reviewer-comment").value;
+
+            // Create a new review HTML
+            const newReview = `
+        <div class="review p-3 mb-3 bg-white rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-1">${name}</h5>
+                <span class="text-warning">${"⭐".repeat(rating)}</span>
+            </div>
+            <p class="text-muted">${comment}</p>
+        </div>
+    `;
+
+            // Append the new review to the container
+            document.getElementById("reviews-container").innerHTML += newReview;
+
+            // Clear the form fields
+            document.getElementById("review-form").reset();
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

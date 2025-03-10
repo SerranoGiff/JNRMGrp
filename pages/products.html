@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JNRM Group - Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/products.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="../assets/img/logo.png" class="logo img-fluid me-2" style="max-height: 50px" alt="Logo" />
+                <span class="fw-bold">JNRM GROUP</span>
+            </a>
+
+            <!-- Icons and Toggler (for small screens) -->
+            <div class="d-flex align-items-center">
+                <div class="icon-buttons d-flex d-lg-none align-items-center">
+                    <a href="../testing/index.html" class="me-1"><i class="fas fa-user"></i></a>
+                    <a href="cart.php" class="me-1"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+                <button class="navbar-toggler border-0 p-0 ms-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#group">Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#catalogues">Catalogues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../main.html#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#food">Food Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Icons (for large screens) -->
+            <div class="icon-buttons d-none d-lg-flex align-items-center">
+                <a href="../testing/index.html" class="me-3"><i class="fas fa-user"></i></a>
+                <a href="pages/cart.php" class="me-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products -->
+    <section id="products" class="py-3 bg-light">
+        <div class="container">
+
+            <div id="cardCarousel" class="carousel slide shadow-lg rounded-5 overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card border-0 rounded-5">
+                            <div class="ratio" style="--bs-aspect-ratio: 42.55%;"> <!-- 20 / 47 * 100 -->
+                                <img class="card-img-top rounded-5 w-100 h-100 object-fit-cover" src="../assets/img/KUTSINTA BANNER.jpg" alt="Image 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 rounded-5">
+                            <div class="ratio" style="--bs-aspect-ratio: 42.55%;">
+                                <img class="card-img-top rounded-5 w-100 h-100 object-fit-cover" src="../assets/img/UBE.jpg" alt="Image 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 rounded-5">
+                            <div class="ratio" style="--bs-aspect-ratio: 42.55%;">
+                                <img class="card-img-top rounded-5 w-100 h-100 object-fit-cover" src="../assets/img/Food Color Ver.2.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+            <!-- Shopee-Style Horizontal Category Bar -->
+            <div class="category-bar d-flex justify-content-around mb-3 mt-3 rounded-4 bg-white shadow p-3">
+                <div class="category-item text-center mx-2">
+                    <i class="fas fa-award fa-2x text-warning"></i>
+                    <p class="small m-0">High Quality</p>
+                </div>
+                <div class="category-item text-center mx-2">
+                    <i class="fas fa-seedling fa-2x text-success"></i>
+                    <p class="small m-0">Organic Ingredients</p>
+                </div>
+                <div class="category-item text-center mx-2">
+                    <i class="fas fa-heart fa-2x text-danger"></i>
+                    <p class="small m-0">Healthy Choice</p>
+                </div>
+                <div class="category-item text-center mx-2">
+                    <i class="fas fa-flask fa-2x text-primary"></i>
+                    <p class="small m-0">No Additives</p>
+                </div>
+                <div class="category-item text-center mx-2">
+                    <i class="fas fa-cookie-bite fa-2x text-info"></i>
+                    <p class="small m-0">Baking Friendly</p>
+                </div>
+            </div>
+
+            <h1 class="fw-bold mt-2 mb-3">Our Products</h1>
+
+            <div class="row">
+                <!-- FILTER BUTTON (Visible on Mobile) -->
+                <div class="d-md-none position-sticky top-0 z-2 w-100 mb-3">
+                    <button class="btn btn-success w-100 rounded py-2 shadow" data-bs-toggle="modal"
+                        data-bs-target="#filterModal">
+                        <i class="fas fa-filter"></i> Filter
+                    </button>
+                </div>
+
+                <!-- FILTER PANEL (Hidden on Mobile, Shown on Desktop) -->
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="card shadow rounded-4 p-3">
+                        <h5 class="fw-bold"><i class="fas fa-filter"></i> SEARCH FILTER</h5>
+                        <p class="fw-bold">By Category</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mcategory1">
+                            <label class="form-check-label" for="mcategory1">Flavors Multi-Purpose</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mcategory2">
+                            <label class="form-check-label" for="mcategory2">Flavors Premium</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mcategory3">
+                            <label class="form-check-label" for="mcategory3">Glycerin & Enchancers</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mcategory4">
+                            <label class="form-check-label" for="mcategory4">Food-Grade Colors</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mcategory5">
+                            <label class="form-check-label" for="mcategory5">Baking Ingredients</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mcategory6">
+                            <label class="form-check-label" for="mcategory6">Instant Mix</label>
+                        </div>
+                        <hr>
+                        <p class="fw-bold">Price Range</p>
+                        <div class="d-flex">
+                            <input type="text" class="form-control me-2" placeholder="₱ MIN">
+                            <input type="text" class="form-control" placeholder="₱ MAX">
+                        </div>
+                        <button class="btn btn-success mt-2 w-100">APPLY</button>
+                    </div>
+                </div>
+
+                <!-- FILTER MODAL (Visible on Mobile Only) -->
+                <div class="modal fade" id="filterModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><i class="fas fa-filter"></i> Filter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="fw-bold">By Category</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="mcategory1">
+                                    <label class="form-check-label" for="mcategory1">Flavors Multi-Purpose</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="mcategory2">
+                                    <label class="form-check-label" for="mcategory2">Flavors Premium</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="mcategory3">
+                                    <label class="form-check-label" for="mcategory3">Glycerin & Enchancers</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="mcategory4">
+                                    <label class="form-check-label" for="mcategory4">Food-Grade Colors</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="mcategory5">
+                                    <label class="form-check-label" for="mcategory5">Baking Ingredients</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="mcategory6">
+                                    <label class="form-check-label" for="mcategory6">Instant Mix</label>
+                                </div>
+                                <hr>
+                                <p class="fw-bold">Price Range</p>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control me-2" placeholder="₱ MIN">
+                                    <input type="text" class="form-control" placeholder="₱ MAX">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success w-100">APPLY FILTER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Cards -->
+                <div class="col-md-9">
+                    <div class="search-container d-flex flex-column flex-sm-row justify-content-end mb-3">
+                        <div class="position-relative w-100" style="max-width: 400px;">
+                            <input type="text" id="searchInput" class="form-control search-bar ps-5"
+                                placeholder="Search products...">
+                            <i
+                                class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                        </div>
+                        <button class="btn btn-warning btn-sm ms-sm-3 mt-2 mt-sm-0 px-3" data-bs-toggle="modal"
+                            data-bs-target="#purchaseHistoryModal">
+                            <i class="fa fa-clock-rotate-left"></i> Purchase History
+                        </button>
+                    </div>
+
+
+                    <!-- Purchase History Modal -->
+                    <div class="modal fade" id="purchaseHistoryModal" tabindex="-1"
+                        aria-labelledby="purchaseHistoryModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="purchaseHistoryModalLabel"><i
+                                            class="fa fa-clock-rotate-left"></i> Purchase History</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="table-wrapper"> <!-- 📌 Wrapper for Scrollable Table -->
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Product</th>
+                                                        <th>Quantity</th>
+                                                        <th>Price</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-label="Date">March 1, 2025</td>
+                                                        <td data-label="Product">Sample Product 1</td>
+                                                        <td data-label="Quantity">2</td>
+                                                        <td data-label="Price">$20.00</td>
+                                                        <td data-label="Actions">
+                                                            <button class="btn btn-sm btn-success add-to-cart">
+                                                                <i class="fa fa-cart-plus"></i> Add to Cart
+                                                            </button>
+                                                            <button class="btn btn-sm btn-primary checkout-now">
+                                                                <i class="fa fa-shopping-bag"></i> Checkout
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Date">March 1, 2025</td>
+                                                        <td data-label="Product">Sample Product 1</td>
+                                                        <td data-label="Quantity">2</td>
+                                                        <td data-label="Price">$20.00</td>
+                                                        <td data-label="Actions">
+                                                            <button class="btn btn-sm btn-success add-to-cart">
+                                                                <i class="fa fa-cart-plus"></i> Add to Cart
+                                                            </button>
+                                                            <button class="btn btn-sm btn-primary checkout-now">
+                                                                <i class="fa fa-shopping-bag"></i> Checkout
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-2 row-cols-md-5 g-3" id="productList">
+                        <div class="col product">
+                            <a href="product-details.html" class="text-decoration-none text-dark">
+                                <div class="card rounded-3 shadow h-100">
+                                    <img src="../assets/img/black.webp" class="card-img-top product-img" alt="Product Image">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Green Leaves Liquid Food Color</h5>
+                                        <p class="card-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col product">
+                            <a href="product-details.html" class="text-decoration-none text-dark">
+                                <div class="card rounded-3 shadow h-100">
+                                    <img src="../assets/img/black.webp" class="card-img-top product-img" alt="Product Image">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Green Leaves Liquid Food Color</h5>
+                                        <p class="card-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col product">
+                            <a href="product-details.html" class="text-decoration-none text-dark">
+                                <div class="card rounded-3 shadow h-100">
+                                    <img src="../assets/img/black.webp" class="card-img-top product-img" alt="Product Image">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Green Leaves Liquid Food Color</h5>
+                                        <p class="card-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col product">
+                            <a href="product-details.html" class="text-decoration-none text-dark">
+                                <div class="card rounded-3 shadow h-100">
+                                    <img src="../assets/img/black.webp" class="card-img-top product-img" alt="Product Image">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Green Leaves Liquid Food Color</h5>
+                                        <p class="card-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col product">
+                            <a href="product-details.html" class="text-decoration-none text-dark">
+                                <div class="card rounded-3 shadow h-100">
+                                    <img src="../assets/img/black.webp" class="card-img-top product-img" alt="Product Image">
+                                    <div class="card-body text-start">
+                                        <h5 class="card-title">Green Leaves Liquid Food Color</h5>
+                                        <p class="card-text">$45.00</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <p id="noResults" class="text-center fw-bold text-secondary mt-3" style="display: none;">No item
+                        found</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About JNRM Group</h5>
+                    <p>
+                        Providing the best solutions and quality products to meet your
+                        needs.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../main.html#about" class="footer-link">About Us</a></li>
+                        <li><a href="../main.html#group" class="footer-link">Our Group</a></li>
+                        <li><a href="../main.html#products" class="footer-link">Products</a></li>
+                        <li><a href="../main.html#contact" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 text-center">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/green.leaves.ph" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/jnrm-corporation" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-3">
+                <p class="copyright">&copy; 2025 JNRM Group. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById("searchInput").addEventListener("keyup", function () {
+            let filter = this.value.toLowerCase();
+            let products = document.querySelectorAll(".product");
+            let noResults = document.getElementById("noResults");
+            let hasResults = false;
+
+            products.forEach(product => {
+                let productName = product.querySelector(".card-title").textContent.toLowerCase();
+                if (productName.includes(filter)) {
+                    product.style.display = "block";
+                    hasResults = true;
+                } else {
+                    product.style.display = "none";
+                }
+            });
+
+            noResults.style.display = hasResults ? "none" : "block";
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
